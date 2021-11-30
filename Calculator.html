@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<form name="my_cal">
+Number 1: <input type="text" name="first"> 
+Number 2: <input type="text" name="second">
+Result: <input type="text" name="result">
+<input type="button" value="+" onclick=add()> 
+<input type="button" value="-" onclick=sub()>
+<input type="button" value="*" onclick=mul()> 
+<input type="button" value="/" onclick=div()>
+</form>
+<script>
+function add(){
+a = +(document.my_cal.first.value);
+b = +(document.my_cal.second.value);
+c = a + b;
+document. my_cal.result.value = c;
+}
+function sub(){
+a = +(document.my_cal.first.value);
+b = +(document.my_cal.second.value);
+c = a - b;
+document. my_cal.result.value = c;
+}
+function mul(){
+a = +(document.my_cal.first.value);
+b = +(document.my_cal.second.value);
+c = a * b;
+document. my_cal.result.value = c;
+}
+function div(){
+a = +(document.my_cal.first.value);
+b = +(document.my_cal.second.value);
+c = a / b;
+document. my_cal.result.value = c;
+}
+</script>
+</body>
+</html>
